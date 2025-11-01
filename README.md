@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Photo Printing Web Application Demo
 
-## Getting Started
+A modern, mobile-friendly photo printing web application built with Next.js, TypeScript, and Tailwind CSS. This demo showcases the core functionality of a photo printing service where users can upload photos, select print sizes, and place orders.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ **Photo Upload**: Upload up to 5 photos directly from mobile devices or desktop  
+ **Thumbnail Preview**: Display uploaded photos as thumbnails  
+ **Print Size Selection**: Choose from 4×6, 5×7, and 8×10 print sizes  
+ **Automatic Price Calculation**: Real-time price calculation based on selected sizes  
+ **Mock Payment**: Test "Pay Now" button with order summary  
+ **Mobile-Friendly Design**: Responsive design optimized for mobile devices  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Pricing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 4×6 prints: AED 1.5
+- 5×7 prints: AED 3.0
+- 8×10 prints: AED 5.0
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+- **Next.js 15**: React framework with App Router
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first CSS framework for responsive design
+- **React Hooks**: useState, useRef for state management
+- **File API**: Browser File API for photo uploads and preview
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Key Components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **PhotoPrintingApp**: Main component handling photo upload, size selection, and payment
+- **Photo Upload**: File input with validation and preview generation
+- **Size Selector**: Dropdown component for print size selection
+- **Price Calculator**: Real-time price calculation based on selected sizes
+- **Order Summary**: Mock payment confirmation and order details
 
-## Deploy on Vercel
+## Technical Highlights
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Type Safety**: Full TypeScript implementation with proper type definitions
+- **Memory Management**: Proper cleanup of object URLs to prevent memory leaks
+- **Responsive Design**: Mobile-first approach using Tailwind CSS
+- **User Experience**: Intuitive interface with clear feedback and validation
+- **Performance**: Optimized with Next.js static generation and image optimization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
